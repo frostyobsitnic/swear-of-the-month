@@ -10,12 +10,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-    // Optional, default is "---"
-    excerpt_separator: "<!-- excerpt -->"
-  });
 
   //eleventyConfig.addShortcode('excerpt', article => extractExcerpt(article));
   
