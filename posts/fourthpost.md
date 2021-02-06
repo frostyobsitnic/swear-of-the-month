@@ -6,8 +6,7 @@ tags: second-tag
 layout: layouts/post.njk
 ---
 
-<!-- Excerpt Start -->
-Leverage agile frameworks to provide a robust synopsis for high level overviews.
+<!-- Excerpt Start -->Leverage agile frameworks to provide a robust synopsis for high level overviews.
 <!-- Excerpt End --> 
 Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
