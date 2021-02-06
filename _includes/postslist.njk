@@ -1,18 +1,18 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in postslist | reverse %}
-  <article> 
+---
+layout: base-layout.njk
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: posts
+---
+{% for post in posts %}
+  <article>
     <h1>
-      <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     </h1>
     <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     <p>{%post.excerpt%}</p>
-    {% for tag in post.data.tags %}
-      {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
   </article>
 {% endfor %}
-</ol>
 
