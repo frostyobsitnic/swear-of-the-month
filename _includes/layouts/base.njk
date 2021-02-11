@@ -12,7 +12,11 @@
   </head>
   <body>
     <header>
-      <div class="sidenav>
+     
+    </header>
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+       <div class="sidenav>
         <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
         <br/>
         {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
@@ -23,10 +27,6 @@
         {%- endfor %}
         </ul>
        </div>
-    </header>
-
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-
 
       {{ content | safe }}
     </main>
