@@ -1,20 +1,20 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "The Swear of the Month Club",
+  "url": "https://swearofthemonth.club",
+  "description": "Putting filthy words in your mouth, one month at a time",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Get your hot fresh cusses right here",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://swearofthemonth.club"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Cory O'Brien",
+    "email": "cory@bettermyths.com",
+    "url": "https://swearofthemonth.club/about-me"
   }
 }
