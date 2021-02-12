@@ -17,6 +17,7 @@
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
        <div class="sidenav">
+        <div class="container sidebar-sticky">
         <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
         <br/>
         {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
@@ -26,9 +27,10 @@
           <br/>
         {%- endfor %}
         </ul>
+        </div>
        </div>
 
-      <div>{{ content | safe }}</div>
+      <div class="container content">{{ content | safe }}</div>
     </main>
 
     <footer></footer>
